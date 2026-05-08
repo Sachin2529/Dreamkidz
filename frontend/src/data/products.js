@@ -40,7 +40,7 @@ export const products = [
     styleNumber: "DK-KG-034",
     name: "Princess Pyjama Set",
     category: "kid-girl",
-    image: "https://images.unsplash.com/photo-1543087903-1ac2364bde51?w=400",
+    image: "https://images.unsplash.com/photo-1641143700082-1e30d7343f40?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     pack: "Pack of 3 (Top + Bottom)",
     price: 699,
     sizeRange: "2Y - 6Y",
