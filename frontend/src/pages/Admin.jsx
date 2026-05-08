@@ -15,12 +15,12 @@ export default function Admin() {
 
   useEffect(() => {
     if (authed) {
-      axios.get("http://localhost:5000/api/enquiry").then((r) => setEnquiries(r.data));
+      axios.get(`${import.meta.env.VITE_API_URL}/api/enquiry`).then((r) => setEnquiries(r.data));
     }
   }, [authed]);
 
   const markReplied = async (id) => {
-    await axios.patch(`http://localhost:5000/api/enquiry/${id}`, { status: "replied" });
+    axios.patch(`${import.meta.env.VITE_API_URL}/api/enquiry/${id}`, { status: "replied" });
     setEnquiries((prev) =>
       prev.map((e) => (e._id === id ? { ...e, status: "replied" } : e))
     );

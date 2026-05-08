@@ -25,7 +25,7 @@ export default function EnquiryModal({ product, onClose }) {
     setLoading(true);
     setError("");
     try {
-      await axios.post("http://localhost:5000/api/enquiry", {
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/enquiry`, {
         ...form,
         productName: product.name,
         styleNumber: product.styleNumber,
